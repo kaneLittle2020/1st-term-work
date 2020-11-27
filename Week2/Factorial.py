@@ -1,13 +1,13 @@
-# Ask user for number of mountains
-print("How many mountains should I display?") 
-mountains = int(input())
+# Ask user for a number
+print("Please enter a number?")
+number = int(input())
 
-# Display mountains
-print("\nDisplaying...")
+# Calculate factorial
+count = 0
+total = 1
 
-for mountain in range(mountains):
-print(""""
-/d/a/s/d/dss/
+while ( count < number ):
+    count = count + 1
+    total = total * count
 
-
-"""")
+print("The factorial is", total)
