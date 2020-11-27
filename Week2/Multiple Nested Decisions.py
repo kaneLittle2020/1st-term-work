@@ -29,15 +29,3 @@ elif (place == "lab"):
 # Handle unknown place
 else:
     print("I am not sure where that place is located.")
-
-
-
-
-
-
-
-
-
-
-
-
