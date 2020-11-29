@@ -1,30 +1,11 @@
-import random as rnd
+temperatures = (19, 20, 21, 22)
 
-print("Please enter the minimum value:")
-min_value = int(input())
+# Concatenate tuples (this creates a new tuple)
+all_temperatures = temperatures + (23, 24)
+print(all_temperatures)
 
-print("Please enter the maximum value:")
-max_value = int(input())
+# Repeat a tuple
+print(temperatures * 2)
 
-random_number = rnd.randrange (min_value, max_value)
-
-print("I am thinking of a number between {} and {}.".format(min_value, max_value))
-print("Can you guess what it is?")
-
-guess = 0
-
-#Loop
-
-while(guess != random_number): # != means not equal to
-  print("Please enter a number:")
-  guess = int(input())
-
-  if (guess == random_number):
-    print("Congratulations!")
-    break
-  elif (guess < random_number):
-    print("Guess higher")
-  else:
-    print("Guess lower")
-  
-print("Game over!")
+# Check membership of a tuple
+print(20 in temperatures)
